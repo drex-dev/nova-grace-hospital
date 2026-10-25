@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Request an Appointment | Nova Grace Hospital</title>
+<meta name="description" content="Request an OPD appointment with a Nova Grace Hospital doctor. We call to confirm.">
+<link rel="canonical" href="https://www.novagracehospital.in.net/appointment">
+<meta property="og:title" content="Request an Appointment | Nova Grace Hospital">
+<meta property="og:description" content="Request an OPD appointment with a Nova Grace Hospital doctor. We call to confirm.">
+<meta property="og:image" content="https://www.novagracehospital.in.net/img/g-building.jpg">
+<meta name="theme-color" content="#C2185B">
+<link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/main.js" defer></script>
+</head>
+<body data-page="appointment">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E06A9C"/><stop offset="1" stop-color="#B23A6E"/></linearGradient>
+    <symbol id="wordmark" viewBox="0 0 250 100">
+      <circle cx="46" cy="50" r="46" fill="url(#mg)"/>
+      <text class="t-nova" x="4" y="64" textLength="104" lengthAdjust="spacingAndGlyphs">NOVA</text>
+      <text class="t-grace" x="114" y="58" textLength="96" lengthAdjust="spacingAndGlyphs">grace</text>
+      <text class="t-hosp" x="116" y="84" textLength="112" lengthAdjust="spacingAndGlyphs">HOSPITAL</text>
+    </symbol>
+  </defs>
+</svg>
+<div class="util">
+  <div class="wrap">
+    <div class="util-l"><span class="em">24×7 Emergency · +91 84006 00546</span><span>979, Mati Road, Akbarpur</span></div>
+    <div class="util-r"><span><span class="star">★</span> 4.2 on Google</span><span>novagraceceohospital@gmail.com</span></div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="mark" href="/" aria-label="Nova Grace Hospital home">
+      <svg viewBox="0 0 250 100" role="img" aria-hidden="true">
+        <circle cx="46" cy="50" r="46" fill="url(#mg)"/>
+        <text class="t-nova" x="4" y="64" textLength="104" lengthAdjust="spacingAndGlyphs">NOVA</text>
+        <text class="t-grace" x="114" y="58" textLength="96" lengthAdjust="spacingAndGlyphs">grace</text>
+        <text class="t-hosp" x="116" y="84" textLength="112" lengthAdjust="spacingAndGlyphs">HOSPITAL</text>
+      </svg>
+    </a>
+    <ul id="menu">
+      <li><a href="/" data-p="home">Home</a></li>
+      <li><a href="/about" data-p="about">About Us</a></li>
+      <li><a href="/services" data-p="services">Services</a></li>
+      <li><a href="/doctors" data-p="doctors">Doctors</a></li>
+      <li><a href="/team" data-p="team">Our Team</a></li>
+      <li><a href="/treatment" data-p="rates">Treatment &amp; Rates</a></li>
+      <li><a href="/contact" data-p="contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="/appointment">Request appointment</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="banner"><img src="/img/g-reception-wide.jpg" alt=""><div class="wrap"><span class="crumb">Home / Request an appointment</span><h1>Request an appointment</h1><p>Choose a doctor and your preferred time. We'll call you to confirm.</p></div></div>
+  <section>
+    <div class="wrap">
+      <div class="formbox">
+        <div class="formside"><img src="/img/g-opd-staff.jpg" alt=""><span class="eyebrow">OPD &amp; specialists</span><h2>We'll confirm by phone</h2><p>Bring previous reports and prescriptions to your visit. In an emergency, call us or come straight to the hospital: we're open 24 hours.</p>
+          <div class="phone-chip"><div><div style="font-size:12px;opacity:.8">24 × 7 helpline</div><strong id="phone">+91 84006 00546</strong></div><button class="copy" type="button" id="copyBtn">Copy number</button></div></div>
+        <form id="apptForm" novalidate>
+          <div class="field full"><label for="a-doctor">Doctor</label><select id="a-doctor" name="doctor"></select></div>
+          <div class="field"><label for="a-name">Patient name</label><input id="a-name" name="name" autocomplete="name" placeholder="Full name"></div>
+          <div class="field"><label for="a-contact">Mobile number</label><input id="a-contact" name="contact" inputmode="tel" autocomplete="tel" placeholder="10-digit mobile"></div>
+          <div class="field full"><label for="a-email">Email (optional)</label><input id="a-email" name="email" type="email" autocomplete="email" placeholder="you@example.com"></div>
+          <div class="field"><label for="a-date">Preferred date</label><input id="a-date" name="date" type="date"></div>
+          <div class="field"><label for="a-time">Preferred time</label><select id="a-time" name="time"><option>Morning (9 AM – 12 PM)</option><option>Afternoon (12 – 4 PM)</option><option>Evening (4 – 8 PM)</option></select></div>
+          <div class="form-foot"><button class="btn btn-primary" type="submit">Submit request</button><span class="note">Design preview: requests are not sent yet.</span></div>
+          <div class="ok" id="apptOk" hidden></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div class="brand">
+      <a class="mark" href="/" aria-label="Nova Grace Hospital home"><svg viewBox="0 0 250 100" style="height:52px" aria-hidden="true"><circle cx="46" cy="50" r="46" fill="url(#mg)"/><text class="t-nova" x="4" y="64" textLength="104" lengthAdjust="spacingAndGlyphs">NOVA</text><text class="t-grace" x="114" y="58" textLength="96" lengthAdjust="spacingAndGlyphs">grace</text><text class="t-hosp" x="116" y="84" textLength="112" lengthAdjust="spacingAndGlyphs">HOSPITAL</text></svg></a>
+      <p>Multi-speciality and emergency hospital at 979, Mati Road, Akbarpur, Kanpur Dehat. Open 24 hours.</p>
+    </div>
+    <div><h4>Hospital</h4><ul><li><a href="/about">About us</a></li><li><a href="/services">Our services</a></li><li><a href="/team">Our team</a></li><li><a href="/contact">Contact</a></li></ul></div>
+    <div><h4>Patients</h4><ul><li><a href="/appointment">Request appointment</a></li><li><a href="/doctors">Find a doctor</a></li><li><a href="/treatment">Treatment &amp; charges</a></li><li><a href="/treatment">Ayushman Bharat</a></li></ul></div>
+    <div><h4>Reach us</h4><ul><li>+91 84006 00546</li><li>novagraceceohospital@gmail.com</li><li>979, Mati Road, Akbarpur 209101</li></ul></div>
+  </div>
+  <div class="wrap legal"><span>© 2026 Nova Grace Hospital, Akbarpur</span><span>Website redesign concept</span></div>
+</footer>
+
+<nav class="mbar" aria-label="Mobile quick actions">
+  <a class="call" href="/contact"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Emergency</a>
+  <a href="/doctors"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Doctors</a>
+  <a href="/appointment"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Book</a>
+  <a href="https://wa.me/918400600546" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg>WhatsApp</a>
+</nav>
+
+</body>
+</html>
